@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Josefin Sans',sans-serif ;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../imatges/fondo.jpg);
+    background-size: cover; 
+}
+ .fondo{
+    
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover; 
+} 
+
+.capcalera {
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0px 30px;
+    justify-content: center;
+    
+}
+
+.logo{
+    height: 100%;
+}
+
+.opcions{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+	background: #111;
+	color: white;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    text-decoration: none;
+    /* border: red 2px solid; */
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.capcalera {
+    border: 2px solid black;
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0px 30px;
+    justify-content: space-between;
+    background: #111;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+/***Donant estil al menú***/
+nav a:hover{
+    text-decoration: underline gold;
+    display: inline-block;
+    position: relative;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+nav a ::after{
+    position: absolute;
+    left: 0;
+    transition: transform .5s;
+    transform-origin: right;
+    top: 5px;
+}
+nav a::before{
+    transform-origin: right;
+
+}
+
+/***Creant el Input de Registre***/
+.registrar{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.3);
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+.registrar h1{  
+    color: black;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline yellow;
+    background: black;
+    color: white;
+    border-top: 10px;
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: white; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 45px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    /* position: fixed;  */
+}
+.inputs{
+    line-height: 60px;
+    
+}
+
+.botonet{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    text-transform: uppercase;
+    color: white;
+    background-color:black;
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 80%;   
+    cursor: pointer;
+    border: 2px solid blue;
+    display: block;
+    margin: 0 auto;
+    
+    }
+/*************Estil Footer*************/
+
+footer{
+    font-family: 'Play', sans-serif;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer .xarxes a{
+    text-decoration: none; 
+
+    }
+
+.xarxes a:hover {
+    text-decoration: underline;
+    background-color: darkmagenta;
+}
+
+.contingutF{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.5;
+    height: auto;
+    position: absolute;
+}
+
+.xarxes{
+    width:100%;
+    /* margin:1% 0%; */
+    padding:0.6% 0%;
+    color:gray;
+    font-size:30px;
+}
+
+.fa{
+    margin: 0 12px;
+    text-decoration: none;
+    color: white ;
+}
