@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Josefin Sans',sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #28282B;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+.capcalera {
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0px 30px;
+    justify-content: center;
+    /* position: fixed; */
+    
+}
+
+.logo{
+    height: 100%;
+}
+
+.opcions{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+	background: #111;
+	color: white;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.capcalera {
+    border: 2px solid black;
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0px 30px;
+    justify-content: space-between;
+    background: #111;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/***Donant estil al menú***/
+nav a:hover{
+    text-decoration: underline gold;
+    display: inline-block;
+    position: relative;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+nav a ::after{
+    position: absolute;
+    left: 0;
+    transition: transform .5s;
+    transform-origin: right;
+    top: 5px;
+}
+nav a::before{
+    transform-origin: right;
+
+}
+
+/*************Titol Índex*************/
+
+.titolbase h1{
+    font-size: 5rem;
+    font-family: 'Cormorant Garamond';
+}
+
+.titolbase{
+    color: white;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+/*************Estil Contenidor Series*************/
+
+.contenidorSeries{
+    border: 2px solid white;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5rem;
+    height: 40rem;
+    margin-bottom: 2rem;    
+}
+
+.titolseries{
+    border: blue 2px solid;
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: fit-content;
+}
+
+
+/*************Estil Footer*************/
+
+.footer .xarxes a{
+    text-decoration: none; 
+
+}
+
+.xarxes a:hover {
+    text-decoration: underline;
+    background-color: darkmagenta;
+}
+
+.contingutF{
+
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.5;
+    height: auto;
+    position: absolute;
+    /* bottom: 0;    */
+}
+
+.xarxes{
+    width:100%;
+    color:gray;
+    font-size:30px;
+}
+
+.fa{
+    margin: 0 12px;
+    text-decoration: none;
+    color: white ;
+}

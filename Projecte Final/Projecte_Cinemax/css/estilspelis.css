@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layoutPelis {
+    border: 2px solid red;
+}
+
+#menuCataleg {
+    border: 2px solid green;
+}
+
+.tarjetaPeli {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tarjetaPeli img {
+    width: 6rem;
+    object-fit: cover;
+}
+
+.infoPeli {
+    width: 20%;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .fitxa{
+    width: 15rem;
+    height: 26rem;
+    margin: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitxa img {
+    object-fit: cover;
+    border: 2px solid black;
+    height: 100%;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.fitxa p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.fitxa p:nth-child(3){
+    text-transform: none;
+} */
