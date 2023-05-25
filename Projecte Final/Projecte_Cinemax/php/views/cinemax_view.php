@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +16,28 @@
 
 <body>
     <header class="capcalera">
-        <a href="../php/index.php"><img src="../imatges/logoBln.png" class="logo" alt="logo"></a>
+        <div class="logocin">
+            <a href="../php/cinemax.php"><img src="../imatges/logoBln.png" class="logo" alt="logo"></a>
+        </div>
         <nav class="opcions">
-			<ul class="menu">
-				<li><a href="../php/index.php">Home</a></li>
-				<li><a href="../php/pelicules.php">Pelicules</a></li>
-				<li><a href="../php/series.php">Series</a></li>
-                <li><a href="#">Modificar Dades</a></li>
-			</ul>
+            <ul class="menu">
+                <li><a href="../php/pelicules.php">Pelicules</a></li>
+                <li><a href="../php/series.php">Series</a></li>
+                <li><a href="../php/modificar_dades.php">Modificar Dades</a></li>
+                <li><a href="../php/web_Service.php">Web Service</a></li>
+                <div class="username">
+                    <?php
+                        echo $nomusuari;
+                    ?>
+                </div>
+
+                <li><a href="../php/tancar.php"><i class="fa fa-sign-out" style="font-size:25px"></i></a></li>
+
+            </ul>
         </nav>
     </header>
+
+
 
     <main>
         <div class="titolbase">
@@ -31,8 +45,8 @@
 
         </div>
 
-       <div class="Contenidors">
-        <!-- Targeta 1 -->
+        <div class="Contenidors">
+            <!-- Targeta 1 -->
             <div class="targeta1 targetes">
                 <div class="infotargeta">
                     <h3 class="nomTar">Pla Gratuit</h3>
@@ -101,7 +115,7 @@
 
                 </div>
             </div>
-            
+
             <!-- Targeta 3 -->
             <div class="targeta1 targetes">
                 <div class="infotargeta">
@@ -129,17 +143,19 @@
                     </ul>
                     <div class="botoCompra">
                         <div class="botoo">Compra ara</div>
-                        
+
                     </div>
                 </div>
             </div>
-           
+
 
         </div>
 
         <div class="missio">
             <h2 class="titolmissio">Quina és la nostra missió?</h2>
-            <p class="textmissio">El que ens hem proposat com a plataforma de Streaming es oferir el millor servei per als nostres clients més exigents, disposem de una qualitat de transmissió fins a 4K, actualitzem el nostre catàleg cada setmana. Les últimes novetats estan aquí, a CineMax!</p>
+            <p class="textmissio">El que ens hem proposat com a plataforma de Streaming es oferir el millor servei per
+                als nostres clients més exigents, disposem de una qualitat de transmissió fins a 4K, actualitzem el
+                nostre catàleg cada setmana. Les últimes novetats estan aquí, a CineMax!</p>
 
         </div>
 
@@ -161,4 +177,5 @@
         </div>
     </footer>
 </body>
+
 </html>

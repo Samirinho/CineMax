@@ -14,16 +14,22 @@
 </head>
 
 <body>
-    <header class="capcalera">
-        <a href="../php/index.php"><img src="../imatges/logoBln.png" href="../php/index.php" class="logo"
-                alt="logo"></a>
+<header class="capcalera">
+        <a href="../php/cinemax.php"><img src="../imatges/logoBln.png" class="logo" alt="logo"></a>
         <nav class="opcions">
-            <ul class="menu">
-                <li><a href="../php/index.php">Home</a></li>
-                <li><a href="../php/login.php">Login</a></li>
-                <li><a href="../php/registre_usuari.php">Register</a></li>
+			<ul class="menu">
+				<li><a href="../php/pelicules.php">Pelicules</a></li>
+				<li><a href="../php/series.php">Series</a></li>
+                <li><a href="../php/modificar_dades.php">Modificar Dades</a></li>
+                <li><a href="../php/web_Service.php">Web Service</a></li>
+                <div class="username">
+                    <?php
+                        echo $nomusuari;
+                    ?>
+                </div>
+                <li><a href="../php/tancar.php"><i class="fa fa-sign-out" style="font-size:25px"></i></a></li>
                 
-            </ul>
+			</ul>
         </nav>
     </header>
 

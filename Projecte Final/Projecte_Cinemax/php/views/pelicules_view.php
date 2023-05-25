@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,19 +12,29 @@
     <title>CineMax</title>
     <link rel="shortcut icon" href="../imatges/logoBln.png" type="image/x-icon" class="logo">
     <link rel="stylesheet" href="../css/estilspelis.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/pelicules.css">
+    <script src='../js/funcioPelicules.js'></script>
 </head>
 
 <body>
-    <header class="capcalera">
+
+<header class="capcalera">
         <a href="../php/index.php"><img src="../imatges/logoBln.png" href="../php/index.php" class="logo"
                 alt="logo"></a>
         <nav class="opcions">
             <ul class="menu">
-                <li><a href="../php/index.php">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="../php/registre_usuari.php">Register</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../php/cinemax.php">Home</a></li>
+                <li><a href="../php/series.php">Series</a></li>
+                <li><a href="../php/modificar_dades.php">Modificar Dades</a></li>
+                <li><a href="../php/web_Service.php">Web Service</a></li>
+                <div class="username">
+
+                    <?php
+                        echo $nomusuari;
+                    ?>
+
+                </div>
+                <li><a href="../php/tancar.php"><i class="fa fa-sign-out" style="font-size:25px"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -34,29 +45,17 @@
         <div class="layoutPelis">
             
             <div id="menuCataleg">
-                <button><span>Pelicules</sp an></button>
-                <button><span>Series</span></button>
+                
                 <form action="" id="buscarPeli">
-                    <input type="search" placeholder="Buscar en el cataleg">
+                    <i class="fa fa-search" style="font-size:20px"></i>
+                    <input type="search" placeholder="Buscar en el cataleg" id='myInput'>
                 </form>
             </div>
-
-            <div class="tarjetaPeli"></div>
+            
+            <div id='consultaPelis'></div>
 
         </div>
     </main>
-
-    <footer>
-        <div class="contingutF">
-            <h2>CineMax</h2>
-            <div class="xarxes">
-                <a href="https://es-es.facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                <a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
 
 </body>
 

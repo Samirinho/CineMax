@@ -45,7 +45,7 @@ body {
     align-items: center;
 }
 
-.menu {
+.menu{
     display: flex;
     text-decoration: none;
     width: 100%;
@@ -54,7 +54,7 @@ body {
     align-items: center;
     list-style: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    gap: 12px;
 }
 
 .capcalera {
@@ -101,7 +101,7 @@ nav a::before {
 .formulari {
     border: 3px solid black;
     display: flex;
-    width: 40%;
+    width: 35%;
     justify-content: center;
     margin: 0 auto;
     margin-top: 10rem;
@@ -115,21 +115,21 @@ nav a::before {
 .titolform {
     width: 100%;
     text-align: center;
-    color: black;
+    color: gold;
     font-family: 'Cormorant Garamond';
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    background-color: gold;
-    border-bottom: 3px solid black;
-    border-radius: 5px;
+    background-color: #272722;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
 }
-
 .intro {
     text-align: center;
     width: 100%;
     font-family: 'Cormorant Garamond';
     font-size: 2rem;
-    background-color: yellow;
+    color:gold;
+    background-color: #272722;
     border-bottom: 2px solid black;
 }
 
@@ -147,6 +147,7 @@ nav a::before {
     float: left;
     padding: 1rem;
     margin: 2rem;
+    width: 80%;
 }
 
 .camp {
@@ -186,10 +187,10 @@ p.camp {
     border: none;
     padding: 1rem;
     width: 80%;
-    background-color: gold;
+    background-color: #272727;
+    color: gold;
     border-radius: 5px;
 }
-
 
 
 /*************Estil Footer*************/

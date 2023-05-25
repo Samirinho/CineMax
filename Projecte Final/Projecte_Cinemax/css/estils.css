@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+} 
+
 body{
     background-color: #28282B;
     background-size: cover; 
@@ -51,6 +55,7 @@ body{
     align-items: center;
     list-style: none;
     text-transform: uppercase;
+    gap: 12px;
 }
 
 .capcalera {
@@ -91,10 +96,10 @@ nav a::before{
 
 }
 
-.username{
+.username {
     color: gold;
-}
 
+}
 /*************Titol Índex*************/
 
 .titolbase h1{
@@ -203,6 +208,8 @@ nav a::before{
     text-decoration: none;
     padding-bottom: 2rem;
     text-transform: none;
+    list-style: none;
+    line-height: 3rem;
 }
 
 i.punt {

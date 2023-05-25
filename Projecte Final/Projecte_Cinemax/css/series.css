@@ -1,7 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-
-
 
 *{
     margin: 0;
@@ -9,6 +6,10 @@
     font-family:'Josefin Sans',sans-serif ;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+} 
 
 body{
     background-color: #28282B;
@@ -51,8 +52,8 @@ body{
     align-items: center;
     list-style: none;
     text-transform: uppercase;
+    gap: 12px;
 }
-
 .capcalera {
     border: 2px solid black;
     display: flex;
@@ -112,24 +113,76 @@ nav a::before{
 
 /*************Estil Contenidor Series*************/
 
-.contenidorSeries{
-    border: 2px solid white;
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    margin-top: 5rem;
-    height: 40rem;
-    margin-bottom: 2rem;    
+.general{
+    margin: auto;
+    
 }
 
-.titolseries{
-    border: blue 2px solid;
-    width: 100%;
-    text-align: center;
-    color: white;
-    height: fit-content;
+#continguts {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    justify-content: center;
 }
+
+#cercar{
+    width: 80%;
+}
+
+#myInput{
+    width: 95%;
+    font-size: 1.3rem;
+    padding: 5px;
+    border: none;
+}
+
+#series {
+    display: flex;
+    border: 2px white solid;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.fitxes {
+    width: 26rem;
+    height: 42rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url(../imatges/targeta.jpg);
+}
+
+.fitxes img{
+    border: solid 2px black;
+    padding: 5px;
+    height: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.fitxes p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background-color: gold;
+    font-weight: bold;
+}
+
+.fitxes p:nth-child(3){
+
+    text-transform: none;
+    background-color: black;
+    color: white;
+}
+
 
 
 /*************Estil Footer*************/
@@ -154,7 +207,7 @@ nav a::before{
     opacity: 0.5;
     height: auto;
     position: absolute;
-    /* bottom: 0;    */
+    bottom: 0;   
 }
 
 .xarxes{

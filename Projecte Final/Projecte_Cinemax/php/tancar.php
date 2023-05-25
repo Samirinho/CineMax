@@ -3,7 +3,7 @@
     session_destroy();
 
     echo "Tancar sessió";
-    header("Location: ../php/login.php");
+    header("Location: ../php/index.php");
     exit();
 
     

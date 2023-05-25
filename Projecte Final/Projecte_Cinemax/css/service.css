@@ -1,3 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,17 +11,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+} 
 
 body{
-    background-image: url(../imatges/fondo.jpg);
+    background-color: #28282B;
     background-size: cover; 
+    background-attachment: fixed;
 }
- .fondo{
-    
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover; 
-} 
 
 .capcalera {
     display: flex;
@@ -25,6 +29,7 @@ body{
     border-radius: 20px;
     padding: 0px 30px;
     justify-content: center;
+    /* position: fixed; */
     
 }
 
@@ -45,7 +50,6 @@ body{
 .menu{
     display: flex;
     text-decoration: none;
-    /* border: red 2px solid; */
     width: 100%;
     justify-content: space-evenly;
     height: 100%;
@@ -70,6 +74,7 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
 /***Donant estil al menú***/
 nav a:hover{
     text-decoration: underline gold;
@@ -91,75 +96,102 @@ nav a::before{
 
 }
 
-/***Creant el Input de Registre***/
-.registrar{
-    background: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 430px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(0, 0, 0,0.3);
-    height: 400px;
-    background-color: whitesmoke;
+.username{
+    color: gold;
 }
 
-.registrar h1{  
-    color: black;
-    width: 100%;
-    text-align: center;
-    text-decoration: underline yellow;
-    background: black;
+.titolservice{
     color: white;
-    border-top: 10px;
-    border-radius: 10px;
-}
-
-.form{
-    width: 100%; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: white; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 45px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    /* position: fixed;  */
-}
-.inputs{
-    line-height: 60px;
-    
-}
-
-.botonet{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
     text-transform: uppercase;
+}
+
+
+h1{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#consulta{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+input[type="text"]{
+    width: 400px;
+    padding: 5px;
+
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+input[type="button"]{
+
+    padding:7px;
+    background: red;
     color: white;
-    background-color:black;
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 80%;   
-    cursor: pointer;
-    border: 2px solid blue;
-    display: block;
-    margin: 0 auto;
-    
-    }
+    border: none;
+    border-radius: 5px;
+}
+
+#contingut{
+    width: 55rem;
+    display: flex;
+    flex-wrap: wrap;    
+    padding: 1rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    background: white;
+}
+
+#contingut h2{
+    width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#info p{
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+#info p:nth-child(3){
+    line-height: 2rem;
+}
+
+#info p:last-child{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    padding: 2px 4px;
+}
+
+#info p span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#poster{
+
+    border: 2px solid grey;
+    padding: 2px;
+    width: 20rem;
+}
+
+#dades{
+    display: flex;
+}
+
+#info{
+    border: 1px solid;
+    padding: 0 1rem;
+    margin-right: 1rem;
+}
+
+
 /*************Estil Footer*************/
 
-footer{
-    font-family: 'Play', sans-serif;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
 .footer .xarxes a{
     text-decoration: none; 
 
@@ -171,8 +203,7 @@ footer{
 }
 
 .contingutF{
-    left: 0;
-    bottom: 0;
+
     width: 100%;
     background-color: black;
     color: white;
@@ -181,12 +212,11 @@ footer{
     opacity: 0.5;
     height: auto;
     position: absolute;
+    /* bottom: 0;  */
 }
 
 .xarxes{
     width:100%;
-    /* margin:1% 0%; */
-    padding:0.6% 0%;
     color:gray;
     font-size:30px;
 }
@@ -196,3 +226,4 @@ footer{
     text-decoration: none;
     color: white ;
 }
+

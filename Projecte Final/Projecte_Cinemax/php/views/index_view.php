@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,151 +10,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
     <title>CineMax</title>
     <link rel="shortcut icon" href="../imatges/logoBln.png" type="image/x-icon" class="logo">
-    <link rel="stylesheet" href="../css/estils.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
     <header class="capcalera">
-        <a href="../php/index.php"><img src="../imatges/logoBln.png" class="logo" alt="logo"></a>
+        <a href="../php/index.php"><img src="../imatges/logoBln.png" href="../php/index.php" class="logo"
+                alt="logo"></a>
         <nav class="opcions">
-			<ul class="menu">
-				<li><a href="../php/index.php">Home</a></li>
-				<li><a href="../php/pelicules.php">Pelicules</a></li>
-				<li><a href="../php/series.php">Series</a></li>
-                <li><a href="../php/modificar_dades.php">Modificar Dades</a></li>
-                <div class="username">
-                <?php 
-                echo $usuari;
-                
-                ?>
-                </div>
-                <li><a href="../php/tancar.php">Tancar sessió</a></li>
-			</ul>
+            <ul class="menu">
+                <li><a href="../php/index.php">Login</a></li>
+                <li><a href="../php/registre_usuari.php">Register</a></li>
+            </ul>
         </nav>
     </header>
 
-
     <main>
-        <div class="titolbase">
-            <h1>CineMax</h1>
 
-        </div>
+        <form class="formulari" action="../php/consultesLogin.php" method="post">
 
-       <div class="Contenidors">
-        <!-- Targeta 1 -->
-            <div class="targeta1 targetes">
-                <div class="infotargeta">
-                    <h3 class="nomTar">Pla Gratuit</h3>
-
-                    <div class="preus">
-                        <span>Gratis!</span>
-                    </div>
-
-                </div>
-
-                <div class="carac">
-                    <h3 class="titolcarac">Característiques</h3>
-                    <ul class="llistatcarac">
-                        <li>
-                            <i class="punt">Accès a totes les Pelicules fins l'any 2020</i>
-                        </li>
-
-                        <li>
-                            <i class="punt">Accès a totes les Series fins l'any 2020</i>
-                        </li>
-
-                        <li>
-                            <i class="punt">Disponible alta qualitat, fins a 480p</i>
-                        </li>
-
-                    </ul>
-
-                    <div class="botoCompra">
-                        <div class="botoo">Compra ara</div>
-                    </div>
-                </div>
-
-
+            <div class="contenidor text">
+                <h2 class="titolform">Inicia sessió</h2>
+                <p class="intro">Gaudeix de CineMax</p>
             </div>
 
-            <!-- Targeta 2 -->
-            <div class="targeta2 targetes">
-                <div class="infotargeta">
-                    <h3 class="nomTar">Pla Bàsic</h3>
 
-                    <div class="preus">
-                        <span>8,90€</span>
-                    </div>
+            <div class="contenidor registre">
 
-                </div>
+                <p class="camp">
+                    <label for="nom" class="lletres">Usuari</label>
+                    <input class="camp" type="text" name="usuari" placeholder="Usuari" autocomplete="off">
+                </p>
 
-                <div class="carac">
-                    <h3 class="titolcarac">Característiques</h3>
-                    <ul class="llistatcarac">
-                        <li>
-                            <i class="punt">Accès a totes les Pelicules fins l'any 2020</i>
-                        </li>
-
-                        <li>
-                            <i class="punt">Accès a totes les Series fins l'any 2020</i>
-                        </li>
-
-                        <li>
-                            <i class="punt">Disponible alta qualitat, fins a 720p</i>
-                        </li>
-
-                    </ul>
-                    <div class="botoCompra">
-                        <div class="botoo">Compra ara</div>
-                    </div>
-
-                </div>
+                <p class="camp">
+                    <label for="contrasenya" class="lletres">Contrasenya</label>
+                    <input class="camp" type="password" name="passw" placeholder="Contrasenya">
+                </p>
             </div>
-            
-            <!-- Targeta 3 -->
-            <div class="targeta1 targetes">
-                <div class="infotargeta">
-                    <h3 class="nomTar">Pla Premium</h3>
 
-                    <div class="preus">
-                        <span>12,90€</span>
-                    </div>
-
-                </div>
-
-                <div class="carac">
-                    <h3 class="titolcarac">Característiques</h3>
-                    <ul class="llistatcarac">
-                        <li>
-                            <i class="punt">Accès a totes les Pelicules de CineMax</i>
-                        </li>
-                        <li>
-                            <i class="punt">Accès a totes les Series de CineMax</i>
-                        </li>
-                        <li>
-                            <i class="punt">Disponible alta qualitat, fins a 4K</i>
-                        </li>
-
-                    </ul>
-                    <div class="botoCompra">
-                        <div class="botoo">Compra ara</div>
-                        
-                    </div>
-                </div>
+            <div class="anunci">
+                <p>No tens compta encara?<a href="../php/registre_usuari.php"> Registra't!</a></p>
             </div>
-           
 
-        </div>
+            <div class="boto">
+                <button class="botonet" type="submit" value="register" name="registrar" id="enviar">
+                    <p>Iniciar sessió</p>
+                </button>
+            </div>
 
-        <div class="missio">
-            <h2 class="titolmissio">Quina és la nostra missió?</h2>
-            <p class="textmissio">El que ens hem proposat com a plataforma de Streaming es oferir el millor servei per als nostres clients més exigents, disposem de una qualitat de transmissió fins a 4K, actualitzem el nostre catàleg cada setmana. Les últimes novetats estan aquí, a CineMax!</p>
-
-        </div>
-
-        <div class="trompeta">
-            <h2>Gaudeix de ja de CineMax a la teva SmartTV, dispositius móbils i al teu ordinador</h2>
-        </div>
+        </form>
 
     </main>
 
@@ -168,5 +73,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>
